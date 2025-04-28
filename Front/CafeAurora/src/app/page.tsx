@@ -11,7 +11,7 @@ export default function Home() {
 
   const handleSubmit = async () => {
     try {
-      const res = await fetch("http://localhost:3001/verify", {
+      const res = await fetch("http://localhost:4001/verify", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ user, contraseña }),
